@@ -49,7 +49,7 @@ public class Application extends JFrame{
 
      //   contentPane.setLayout(null);
 
-        ip = new InfoPage();
+        ip = new InfoPage(model);
 
 
         final JLabel label1 = new JLabel();

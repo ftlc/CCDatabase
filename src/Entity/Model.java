@@ -5,6 +5,13 @@ package Entity;
  */
 public class Model {
 
+    InfoEntity infoEntity;
     public Model()
-    {}
+    {
+        this.infoEntity = new InfoEntity();
+    }
+
+    public InfoEntity getInfoEntity() {
+        return infoEntity;
+    }
 }

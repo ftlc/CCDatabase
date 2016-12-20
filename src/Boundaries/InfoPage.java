@@ -1,5 +1,7 @@
 package Boundaries;
 
+import Controllers.WriteInfoController;
+import Entity.Model;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
@@ -14,18 +16,19 @@ public class InfoPage extends JDialog {
     private JButton buttonCancel;
     private JTextField textField1;
     private JTextField textField2;
+    Model model;
 
-    public InfoPage() {
+    public InfoPage(Model m) {
+
+        this.model = m;
+
+
         setBounds(100, 100, 800, 800);
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
 
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onOK();
-            }
-        });
+        buttonOK.addActionListener(new WriteInfoController(model.getInfoEntity(), this));
 
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
