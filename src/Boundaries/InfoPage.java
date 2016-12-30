@@ -16,30 +16,30 @@ public class InfoPage extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JTextField textField4;
-    private JTextField textField5;
-    private JTextField textField6;
-    private JTextField textField7;
-    private JTextField textField8;
-    private JTextField textField9;
-    private JTextField textField10;
-    private JTextField textField11;
-    private JTextField textField12;
-    private JTextField textField13;
-    private JTextField textField14;
-    private JTextField textField15;
-    private JTextField textField16;
-    private JTextField textField17;
-    private JTextField textField18;
-    private JTextField textField19;
-    private JTextField textField21;
-    private JTextField textField22;
-    private JTextField textField23;
-    private JTextField textField25;
-    private JTextField textField28;
+    private JTextField nametxt;
+    private JTextField phoneNumtxt;
+    private JTextField emailtxt;
+    private JTextField busNameTxt;
+    private JTextField POnumtxt;
+    private JTextField invoiceNumtxt;
+    private JTextField manInvoiceNumtxt;
+    private JTextField dateOfPurchaseTxt;
+    private JTextField dateOfShipmenttxt;
+    private JTextField protxt;
+    private JTextField shippingCotxt;
+    private JTextField manufacturertxt;
+    private JTextField manBranchtxt;
+    private JTextField modelNumtxt;
+    private JTextField quantityTxt;
+    private JTextField shippingTermtxt;
+    private JTextField netCosttxt;
+    private JTextField salesPricetxt;
+    private JTextField soNumtxt;
+    private JTextField taxtxt;
+    private JTextField amazonEbayFeetxt;
+    private JTextField paypalFeetxt;
+    private JTextField paidDatetxt;
+    private JTextField invoiceDatetxt;
     private JComboBox soldFrom;
     private JComboBox payMethod;
     private JCheckBox paidToMan;
@@ -104,6 +104,126 @@ public class InfoPage extends JDialog {
 
     }
 
+    public JTextField getBusNameTxt() {
+        return busNameTxt;
+    }
+
+    public JTextField getDateOfPurchaseTxt() {
+        return dateOfPurchaseTxt;
+    }
+
+    public JTextField getDateOfShipmenttxt() {
+        return dateOfShipmenttxt;
+    }
+
+    public JTextField getEmailtxt() {
+        return emailtxt;
+    }
+
+    public JTextField getAmazonEbayFeetxt() {
+        return amazonEbayFeetxt;
+    }
+
+    public JTextField getInvoiceNumtxt() {
+        return invoiceNumtxt;
+    }
+
+    public JCheckBox getPaidToMan() {
+        return paidToMan;
+    }
+
+    public JTextField getManBranchtxt() {
+        return manBranchtxt;
+    }
+
+    public JTextField getManInvoiceNumtxt() {
+        return manInvoiceNumtxt;
+    }
+
+    public JTextField getInvoiceDatetxt() {
+        return invoiceDatetxt;
+    }
+
+    public JCheckBox getDeliveryCheckBox() {
+        return deliveryCheckBox;
+    }
+
+    public JComboBox getPayMethod() {
+        return payMethod;
+    }
+
+    public JTextField getManufacturertxt() {
+        return manufacturertxt;
+    }
+
+    public JTextField getModelNumtxt() {
+        return modelNumtxt;
+    }
+
+    public JTextField getNametxt() {
+        return nametxt;
+    }
+
+    public JComboBox getSoldFrom() {
+        return soldFrom;
+    }
+
+    public JCheckBox getReturningCustomerCheckBox() {
+        return returningCustomerCheckBox;
+    }
+
+    public JTextField getNetCosttxt() {
+        return netCosttxt;
+    }
+
+    public JTextField getPaidDatetxt() {
+        return paidDatetxt;
+    }
+
+    public JTextField getPaypalFeetxt() {
+        return paypalFeetxt;
+    }
+
+    public JTextField getPhoneNumtxt() {
+        return phoneNumtxt;
+    }
+
+    public JTextField getPOnumtxt() {
+        return POnumtxt;
+    }
+
+    public JTextField getProtxt() {
+        return protxt;
+    }
+
+    public JTextField getQuantityTxt() {
+        return quantityTxt;
+    }
+
+    public JTextField getSalesPricetxt() {
+        return salesPricetxt;
+    }
+
+    public JTextField getShippingCotxt() {
+        return shippingCotxt;
+    }
+
+    public JTextField getShippingTermtxt() {
+        return shippingTermtxt;
+    }
+
+    public JCheckBox getLiftGateCheckBox() {
+        return liftGateCheckBox;
+    }
+
+    public JTextField getSoNumtxt() {
+        return soNumtxt;
+    }
+
+    public JTextField getTaxtxt() {
+        return taxtxt;
+    }
+
     private void onOK() {
         // add your code here
         dispose();
@@ -153,15 +273,15 @@ public class InfoPage extends JDialog {
         final JLabel label1 = new JLabel();
         label1.setText("Name");
         panel3.add(label1, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        textField1 = new JTextField();
-        textField1.setText("");
-        panel3.add(textField1, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        nametxt = new JTextField();
+        nametxt.setText("");
+        panel3.add(nametxt, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         final JLabel label2 = new JLabel();
         label2.setText("Phone Number");
         panel3.add(label2, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        textField2 = new JTextField();
-        textField2.setText("");
-        panel3.add(textField2, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        phoneNumtxt = new JTextField();
+        phoneNumtxt.setText("");
+        panel3.add(phoneNumtxt, new GridConstraints(1, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         final JLabel label3 = new JLabel();
         label3.setText("Email");
         panel3.add(label3, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
@@ -198,72 +318,72 @@ public class InfoPage extends JDialog {
         final JLabel label14 = new JLabel();
         label14.setText("Model Num");
         panel3.add(label14, new GridConstraints(13, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        textField3 = new JTextField();
-        textField3.setText("");
-        panel3.add(textField3, new GridConstraints(2, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField4 = new JTextField();
-        textField4.setText("");
-        panel3.add(textField4, new GridConstraints(3, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField5 = new JTextField();
-        textField5.setText("");
-        panel3.add(textField5, new GridConstraints(4, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField6 = new JTextField();
-        textField6.setText("");
-        panel3.add(textField6, new GridConstraints(5, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField7 = new JTextField();
-        textField7.setText("");
-        panel3.add(textField7, new GridConstraints(6, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField8 = new JTextField();
-        textField8.setText("");
-        panel3.add(textField8, new GridConstraints(7, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField9 = new JTextField();
-        textField9.setText("");
-        panel3.add(textField9, new GridConstraints(8, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField10 = new JTextField();
-        textField10.setText("");
-        panel3.add(textField10, new GridConstraints(9, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField11 = new JTextField();
-        textField11.setText("");
-        panel3.add(textField11, new GridConstraints(10, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField12 = new JTextField();
-        textField12.setText("");
-        panel3.add(textField12, new GridConstraints(11, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField13 = new JTextField();
-        textField13.setText("");
-        panel3.add(textField13, new GridConstraints(12, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField14 = new JTextField();
-        textField14.setText("");
-        panel3.add(textField14, new GridConstraints(13, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField15 = new JTextField();
-        textField15.setText("");
-        panel3.add(textField15, new GridConstraints(14, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField16 = new JTextField();
-        textField16.setText("");
-        panel3.add(textField16, new GridConstraints(15, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField17 = new JTextField();
-        textField17.setText("");
-        panel3.add(textField17, new GridConstraints(16, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField18 = new JTextField();
-        textField18.setText("");
-        panel3.add(textField18, new GridConstraints(17, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField19 = new JTextField();
-        textField19.setText("");
-        panel3.add(textField19, new GridConstraints(18, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField21 = new JTextField();
-        textField21.setText("");
-        panel3.add(textField21, new GridConstraints(20, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField22 = new JTextField();
-        textField22.setText("");
-        panel3.add(textField22, new GridConstraints(21, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField23 = new JTextField();
-        textField23.setText("");
-        panel3.add(textField23, new GridConstraints(22, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField25 = new JTextField();
-        textField25.setText("");
-        panel3.add(textField25, new GridConstraints(29, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
-        textField28 = new JTextField();
-        textField28.setText("");
-        panel3.add(textField28, new GridConstraints(25, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        emailtxt = new JTextField();
+        emailtxt.setText("");
+        panel3.add(emailtxt, new GridConstraints(2, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        busNameTxt = new JTextField();
+        busNameTxt.setText("");
+        panel3.add(busNameTxt, new GridConstraints(3, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        POnumtxt = new JTextField();
+        POnumtxt.setText("");
+        panel3.add(POnumtxt, new GridConstraints(4, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        invoiceNumtxt = new JTextField();
+        invoiceNumtxt.setText("");
+        panel3.add(invoiceNumtxt, new GridConstraints(5, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        manInvoiceNumtxt = new JTextField();
+        manInvoiceNumtxt.setText("");
+        panel3.add(manInvoiceNumtxt, new GridConstraints(6, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        dateOfPurchaseTxt = new JTextField();
+        dateOfPurchaseTxt.setText("");
+        panel3.add(dateOfPurchaseTxt, new GridConstraints(7, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        dateOfShipmenttxt = new JTextField();
+        dateOfShipmenttxt.setText("");
+        panel3.add(dateOfShipmenttxt, new GridConstraints(8, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        protxt = new JTextField();
+        protxt.setText("");
+        panel3.add(protxt, new GridConstraints(9, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        shippingCotxt = new JTextField();
+        shippingCotxt.setText("");
+        panel3.add(shippingCotxt, new GridConstraints(10, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        manufacturertxt = new JTextField();
+        manufacturertxt.setText("");
+        panel3.add(manufacturertxt, new GridConstraints(11, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        manBranchtxt = new JTextField();
+        manBranchtxt.setText("");
+        panel3.add(manBranchtxt, new GridConstraints(12, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        modelNumtxt = new JTextField();
+        modelNumtxt.setText("");
+        panel3.add(modelNumtxt, new GridConstraints(13, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        quantityTxt = new JTextField();
+        quantityTxt.setText("");
+        panel3.add(quantityTxt, new GridConstraints(14, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        shippingTermtxt = new JTextField();
+        shippingTermtxt.setText("");
+        panel3.add(shippingTermtxt, new GridConstraints(15, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        netCosttxt = new JTextField();
+        netCosttxt.setText("");
+        panel3.add(netCosttxt, new GridConstraints(16, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        salesPricetxt = new JTextField();
+        salesPricetxt.setText("");
+        panel3.add(salesPricetxt, new GridConstraints(17, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        soNumtxt = new JTextField();
+        soNumtxt.setText("");
+        panel3.add(soNumtxt, new GridConstraints(18, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        taxtxt = new JTextField();
+        taxtxt.setText("");
+        panel3.add(taxtxt, new GridConstraints(20, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        amazonEbayFeetxt = new JTextField();
+        amazonEbayFeetxt.setText("");
+        panel3.add(amazonEbayFeetxt, new GridConstraints(21, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        paypalFeetxt = new JTextField();
+        paypalFeetxt.setText("");
+        panel3.add(paypalFeetxt, new GridConstraints(22, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        paidDatetxt = new JTextField();
+        paidDatetxt.setText("");
+        panel3.add(paidDatetxt, new GridConstraints(29, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        invoiceDatetxt = new JTextField();
+        invoiceDatetxt.setText("");
+        panel3.add(invoiceDatetxt, new GridConstraints(25, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         final JLabel label15 = new JLabel();
         label15.setText("Quantity");
         panel3.add(label15, new GridConstraints(14, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
